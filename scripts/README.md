@@ -1,6 +1,6 @@
 # Git Workflow Scripts
 
-Scripts for managing git commits and project status in the Context Engineering + IADPVEC framework.
+Scripts for managing git commits and project status in the Context Engineering + IADPVEVC framework.
 
 ## 📋 Available Scripts
 
@@ -92,7 +92,7 @@ When an AI assistant (like Claude) needs to get up to speed with a project:
 - **Status updates** for discussions and planning: `gsu "message"`
 - **Commits** for completed work: `gcu "what was done" "current status"`
 
-### **For IADPVEC Workflow:**
+### **For IADPVEVC Workflow:**
 - **After DISCUSS phase:** Status update with agreed approach
 - **After EXECUTE phase:** Commit with what was implemented
 - **Session interruptions:** Status update with current phase
@@ -105,13 +105,13 @@ When an AI assistant (like Claude) needs to get up to speed with a project:
 
 ## 🎯 Framework Integration
 
-These scripts are designed to work with the Context Engineering + IADPVEC methodology:
+These scripts are designed to work with the Context Engineering + IADPVEVC methodology:
 
 - **Context preservation** through detailed status tracking
 - **Recovery support** for interrupted sessions  
-- **IADPVEC compliance** by documenting workflow phases
+- **IADPVEVC compliance** by documenting workflow phases
 - **Knowledge breadcrumbs** for future development
 
 ---
 
-**Part of the Context Engineering + IADPVEC unified framework for reliable AI-assisted development.**
+**Part of the Context Engineering + IADPVEVC unified framework for reliable AI-assisted development.**

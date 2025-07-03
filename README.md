@@ -1,8 +1,8 @@
-# Context Engineering + IADPVEC: Complete AI Development Methodology
+# Context Engineering + IADPVEVC: Complete AI Development Methodology
 
 **The unified framework that combines comprehensive context preparation with controlled execution for reliable AI-assisted development.**
 
-> **Context Engineering provides the foundation. IADPVEC ensures safe execution. Together they transform AI from an unpredictable tool into a reliable development partner.**
+> **Context Engineering provides the foundation. IADPVEVC ensures safe execution. Together they transform AI from an unpredictable tool into a reliable development partner.**
 
 ---
 
@@ -13,14 +13,14 @@
 - **Structured context** that gives AI complete understanding
 - **Knowledge preservation** through examples and architecture decisions
 
-### **IADPVEC: The Execution Framework**
+### **IADPVEVC: The Execution Framework**
 - **Controlled workflow** that prevents unauthorized changes
 - **Validation loops** that ensure quality and correctness
 - **Transparent process** that maintains developer control
 
 ### **The Integration**
 ```
-Context Engineering (What to build) + IADPVEC (How to build safely) = Reliable AI Development
+Context Engineering (What to build) + IADPVEVC (How to build safely) = Reliable AI Development
 ```
 
 ---
@@ -50,8 +50,8 @@ mkdir -p examples/{architecture,testing,workflows}
 cp examples/architecture/fastapi_structure.py examples/architecture/
 cp examples/testing/comprehensive_testing_patterns.py examples/testing/
 
-# 5. Start development with IADPVEC
-# Follow the workflow: INGEST → ASSESS → DISCUSS → PLAN → VALIDATE → EXECUTE → COMMIT
+# 5. Start development with IADPVEVC
+# Follow the workflow: INGEST → ASSESS → DISCUSS → PLAN → VALIDATE → EXECUTE → VALIDATE → COMMIT
 ```
 
 ### **Option 2: Rapid Start (10 minutes)**
@@ -65,7 +65,7 @@ cp templates/TASK.md .
 # 2. Create basic structure
 mkdir -p examples docs
 
-# 3. Start with IADPVEC workflow
+# 3. Start with IADPVEVC workflow
 # Add context and examples as you learn what works
 ```
 
@@ -81,7 +81,7 @@ Add the methodology to your current project.
 # Create examples from existing good code
 
 # 3. Gradual adoption
-# Apply IADPVEC to new features
+# Apply IADPVEVC to new features
 # Improve context incrementally
 ```
 

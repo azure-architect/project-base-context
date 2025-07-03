@@ -1,6 +1,6 @@
 #!/bin/bash
 # scripts/git-commit-update.sh - Commit changes and update project status
-# Part of the Context Engineering + IADPVEC framework
+# Part of the Context Engineering + IADPVEVC framework
 
 set -e
 

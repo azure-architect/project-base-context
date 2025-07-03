@@ -1,6 +1,6 @@
 #!/bin/bash
 # scripts/git-status-update.sh - Update project status without committing
-# Part of the Context Engineering + IADPVEC framework
+# Part of the Context Engineering + IADPVEVC framework
 
 set -e
 
