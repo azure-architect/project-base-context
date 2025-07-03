@@ -4,6 +4,10 @@
 
 set -e
 
+# Force git to not use editor for commits
+export GIT_EDITOR=:
+export EDITOR=:
+
 if [ $# -eq 0 ]; then
     echo "❌ Usage: scripts/git-commit-update.sh 'commit message' ['status message']"
     echo "📝 Examples:"
@@ -54,8 +58,9 @@ git add .
 echo "📋 Changes to be committed:"
 git diff --staged --name-status
 
-# Commit the changes
-git commit -m "$COMMIT_MSG"
+# Commit the changes with proper message handling
+echo "📋 Committing with message: $COMMIT_MSG"
+git commit -m "$COMMIT_MSG" --no-edit
 
 # Create comprehensive status summary file
 echo "=== PROJECT SUMMARY ===" > .git/PROJECT_STATUS.txt
