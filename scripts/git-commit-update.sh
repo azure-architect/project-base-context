@@ -55,9 +55,9 @@ fi
 # Stage all changes
 git add .
 
-# Show what will be committed
+# Show what will be committed (without pager)
 echo "📋 Changes to be committed:"
-git diff --staged --name-status
+git --no-pager diff --staged --name-status
 
 # Commit the changes with aggressive no-editor settings
 echo "📋 Committing with message: $COMMIT_MSG"
