@@ -7,6 +7,7 @@ set -e
 # Force git to not use editor for commits
 export GIT_EDITOR=:
 export EDITOR=:
+export VISUAL=:
 
 if [ $# -eq 0 ]; then
     echo "❌ Usage: scripts/git-commit-update.sh 'commit message' ['status message']"
