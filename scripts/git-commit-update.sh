@@ -59,9 +59,9 @@ git add .
 echo "📋 Changes to be committed:"
 git diff --staged --name-status
 
-# Commit the changes with proper message handling
+# Commit the changes with aggressive no-editor settings
 echo "📋 Committing with message: $COMMIT_MSG"
-git commit -m "$COMMIT_MSG" --no-edit
+git -c core.editor=true -c sequence.editor=true commit -m "$COMMIT_MSG" --no-edit --quiet
 
 # Create comprehensive status summary file
 echo "=== PROJECT SUMMARY ===" > .git/PROJECT_STATUS.txt
