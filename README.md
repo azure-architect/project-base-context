@@ -114,6 +114,10 @@ your-project/
 ├── PRPs/                         # Product Requirements Prompts
 │   ├── templates/                # PRP templates
 │   └── generated/               # Generated PRPs for complex features
+├── scripts/                      # Git workflow automation
+│   ├── git-status-update.sh     # Status updates without commits
+│   ├── git-commit-update.sh     # Commit with status tracking
+│   └── README.md                # Git workflow documentation
 ├── .claude/                     # Claude-specific configuration
 │   ├── settings.local.json      # Tool permissions
 │   └── commands/                # Custom workflow commands
@@ -122,6 +126,50 @@ your-project/
 ├── CLAUDE.md                   # Your AI behavior rules
 └── .env.example               # Environment configuration
 ```
+
+---
+
+## 📝 **Git Workflow Integration**
+
+### **Automated Project Status Tracking**
+The framework includes scripts for maintaining project continuity and AI assistant context recovery:
+
+#### **scripts/git-status-update.sh** - Status Only Updates
+```bash
+# Update project status without committing
+scripts/git-status-update.sh "Discussed Docker testing approach, proceeding with validation"
+```
+
+#### **scripts/git-commit-update.sh** - Commit + Status Updates  
+```bash
+# Commit changes and update status
+scripts/git-commit-update.sh "Complete Docker infrastructure" "Ready for testing phase"
+
+# Commit with default status
+scripts/git-commit-update.sh "Fix port mapping strategy"
+```
+
+### **Setup Aliases for Quick Access**
+```bash
+# Add to ~/.zshrc
+alias gsu='scripts/git-status-update.sh'      # Status update only
+alias gcu='scripts/git-commit-update.sh'      # Commit + status update
+```
+
+### **AI Assistant Recovery**
+Both scripts create `.git/PROJECT_STATUS.txt` containing:
+- **Recent commit history** (last 5 commits)
+- **Current project status** with timestamp
+- **Branch information** and repository state
+- **Recovery context** for interrupted sessions
+
+When an AI assistant needs to get up to speed: **"Read .git/PROJECT_STATUS.txt"** provides complete project context.
+
+### **IADPVEC Integration**
+- **After DISCUSS phase:** Status update with agreed approach
+- **After EXECUTE phase:** Commit with implementation details
+- **Session interruptions:** Status update with current IADPVEC phase
+- **Recovery:** AI reads status file to understand where work left off
 
 ---
 
